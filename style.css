@@ -1,0 +1,69 @@
+body{
+    margin: 0 auto;
+}
+.fast {
+    display: block; /* 初期状態は表示 */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #34675C;
+    z-index: 100;
+    transition: opacity 2s ease; /* フェードアウトのトランジションを追加 */
+}
+
+.fast.hidden {
+    opacity: 0; /* フェードアウト時の不透明度 */
+}
+.fast > h1{
+    margin: 0;
+    text-align: center;
+    line-height: 900px;
+    z-index: 100;
+}
+header{
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 130px;
+    background-color: #4CB5F5;
+    opacity: 0.9;
+    z-index: 10;
+    display: flex;
+}
+header > h1{
+    margin: 0 auto;
+    flex: 1;
+    color: white;
+    line-height: 100px;
+    white-space: nowrap;
+    margin: 1rem 2rem;
+}
+header nav > ul{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    line-height: 100px;
+    justify-content: end;
+}
+header nav ul > li{
+    margin: 1rem 2rem;
+}
+header nav ul li > a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+header nav ul li > a:hover{
+    text-decoration: underline;
+    text-decoration-color: #B7B8B6;
+    text-underline-offset: 1rem;
+    padding: 10px;
+    color: white;
+}
+.aicon{
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+}
