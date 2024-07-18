@@ -67,3 +67,7 @@ header nav ul li > a:hover{
     width: 100px;
     height: 100px;
 }
+#work .ai div > img{
+    width: 500px;
+    height: 800px;
+}
