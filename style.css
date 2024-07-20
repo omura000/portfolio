@@ -46,6 +46,7 @@ header nav > ul{
     list-style: none;
     line-height: 100px;
     justify-content: end;
+    font-size: 20px;
 }
 header nav ul > li{
     margin: 1rem 2rem;
@@ -66,6 +67,26 @@ header nav ul li > a:hover{
     margin: 15px;
     width: 100px;
     height: 100px;
+}
+.sub{
+    display: grid;
+    color: white;
+    background-color: #4CB5F5;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+#self div{
+    max-width: 1300px;
+    width: 70%;
+    height: 500px;
+    margin: 100px 220px;
+    background-color: #B7B8B6;
+}
+#skill div > img{
+    width: 100px;
 }
 #work .ai div > img{
     width: 500px;
