@@ -2,18 +2,18 @@ body{
     margin: 0 auto;
 }
 .fast {
-    display: block; /* 初期状態は表示 */
+    display: block; 
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: #34675C;
     z-index: 100;
-    transition: opacity 2s ease; /* フェードアウトのトランジションを追加 */
+    transition: opacity 1s ease; 
 }
 
 .fast.hidden {
-    opacity: 0; /* フェードアウト時の不透明度 */
+    opacity: 0;
 }
 .fast > h1{
     margin: 0;
@@ -78,17 +78,166 @@ header nav ul li > a:hover{
     align-items: center;
     font-size: 25px;
 }
-#self div{
+#self{
+    height: 900px;
+}
+#self > h3{
+    margin-top: 150px;
+}
+#self .self-area{
     max-width: 1300px;
     width: 70%;
     height: 500px;
     margin: 100px 220px;
-    background-color: #B7B8B6;
+    border: solid 3px;
+    display: flex;
 }
-#skill div > img{
-    width: 100px;
+
+#self .self-area img{
+    width: 400px;
+    height: 300px;
+    margin: 100px;
+}
+#self .self-area .intor{
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+#self .self-area .intor > .name{
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
 }
 #work .ai div > img{
     width: 500px;
     height: 800px;
 }
+#skill{
+    height: 1000px;
+}
+#skill > .area{
+    display: flex;
+}
+#skill .area > div{
+    flex: 1;
+    width: 300px;
+    height: 600px;
+    margin: 50px;
+    margin-top: 100px;
+    border: solid 3px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+#skill .area div > .aiimg{
+    width: 100px;
+    display: block; 
+    margin: 0 auto; 
+}
+#skill .area div > .aeimg{
+    width: 100px;
+    display: block; 
+    margin: 0 auto; 
+}
+#skill .area div > .unimg{
+    width: 100px;
+    display: block; 
+    margin: 0 auto; 
+}
+#skill .area div > .aeimg{
+    width: 110px;
+    display: block; 
+    margin: 0 auto; 
+}
+#skill .area div > .unimg{
+    width: 100px;
+    display: block; 
+    margin: 0 auto; 
+}
+#skill .area div > .skillname{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+#skill .area div > .description{
+    margin: 50px 100px;
+    font-size: 20px;
+}
+#work div > .skillname{
+    display: grid;
+    color: white;
+    background-color: #4CB5F5;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+#work .ai > div{
+    width: 700px;
+    height: 800px;
+    margin: 100px 220px;
+    border: solid 3px;
+}
+#work .ai .ai01 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 200px ;
+}
+#work .ai .ai02 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 200px ;
+}
+#work .ai .ai03 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 200px ;
+}
+#work .ai .ai04 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 200px ;
+}
+#work .ai .ai01 > .worktitle{
+    text-align: center;
+    font-size: 30px;
+}
+#work .ai .ai02 > .worktitle{
+    text-align: center;
+    font-size: 30px;
+}
+#work .ai .ai03 > .worktitle{
+    text-align: center;
+    font-size: 30px;
+}
+#work .ai .ai04 > .worktitle{
+    text-align: center;
+    font-size: 30px;
+}
+#work .ai .ai01 > .details{
+    font-size: 20px;
+    margin: 40px 100px; 
+}
+#work .ai .ai02 > .details{
+    font-size: 20px;
+    margin: 40px 100px; 
+}
+#work .ai .ai03 > .details{
+    font-size: 20px;
+    margin: 40px 100px; 
+}
+#work .ai .ai04 > .details{
+    font-size: 20px;
+    margin: 40px 100px; 
+}
+#work .ae div > video{
+    width: 500px;
+}
+#work .unity div > video{
+    width: 500px;
+} 

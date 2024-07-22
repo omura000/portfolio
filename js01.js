@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // フェードアウトが完了した後、要素を完全に非表示にする
         setTimeout(() => {
             fast.style.display = "none";
-        }, 2000); // 2秒後に完全に非表示
-    }, 3000); // 3秒後にフェードアウト開始
+        }, 1000); // 1秒後に完全に非表示
+    }, 2000); // 2秒後にフェードアウト開始
 });
