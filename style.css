@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0 auto;
 }
@@ -7,7 +10,9 @@ body{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #34675C;
+    background-color: #4d6176;
+    color: white;
+    font-size: 50px;
     z-index: 100;
     transition: opacity 1s ease; 
 }
@@ -26,7 +31,7 @@ header{
     top: 0;
     width: 100%;
     min-height: 130px;
-    background-color: #4CB5F5;
+    background-color: #4d6176;
     opacity: 0.9;
     z-index: 10;
     display: flex;
@@ -58,7 +63,7 @@ header nav ul li > a{
 }
 header nav ul li > a:hover{
     text-decoration: underline;
-    text-decoration-color: #B7B8B6;
+    text-decoration-color: white;
     text-underline-offset: 1rem;
     padding: 10px;
     color: white;
@@ -71,7 +76,7 @@ header nav ul li > a:hover{
 .sub{
     display: grid;
     color: white;
-    background-color: #4CB5F5;
+    background-color: #4d6176;
     width: 300px;
     height: 80px;
     text-align: center;
@@ -85,7 +90,7 @@ header nav ul li > a:hover{
     margin-top: 150px;
 }
 #self .self-area{
-    max-width: 1300px;
+    max-width: 1920px;
     width: 70%;
     height: 500px;
     margin: 100px 220px;
@@ -161,13 +166,13 @@ header nav ul li > a:hover{
     margin-bottom: 50px;
 }
 #skill .area div > .description{
-    margin: 50px 100px;
+    margin: 50px 70px;
     font-size: 20px;
 }
 #work div > .skillname{
     display: grid;
     color: white;
-    background-color: #4CB5F5;
+    background-color: #4d6176;
     width: 300px;
     height: 80px;
     text-align: center;
@@ -177,31 +182,55 @@ header nav ul li > a:hover{
     margin-top: 100px;
     border-radius: 5px;
 }
-#work .ai > div{
-    width: 700px;
-    height: 800px;
-    margin: 100px 220px;
+#work .ai > .aiflex01{
+    display: flex;
+}
+#work .ai > .aiflex02{
+    display: flex;
+}
+#work .ai div > .ai01{
+    width: 100%;
+    height: 900px;
+    margin: 100px 100px;
+    border: solid 3px;
+}
+#work .ai div > .ai02{
+    width: 100%;
+    height: 900px;
+    margin: 100px 100px;
+    border: solid 3px;
+}
+#work .ai div > .ai03{
+    width: 100%;
+    height: 900px;
+    margin: 100px 100px;
+    border: solid 3px;
+}
+#work .ai div > .ai04{
+    width: 100%;
+    height: 900px;
+    margin: 100px 100px;
     border: solid 3px;
 }
 #work .ai .ai01 > img{
     width: 300px;
     height: 500px;
-    margin: 0 200px ;
+    margin: 0 100px;
 }
 #work .ai .ai02 > img{
     width: 300px;
     height: 500px;
-    margin: 0 200px ;
+    margin: 0 100px ;
 }
 #work .ai .ai03 > img{
     width: 300px;
     height: 500px;
-    margin: 0 200px ;
+    margin: 0 100px ;
 }
 #work .ai .ai04 > img{
     width: 300px;
     height: 500px;
-    margin: 0 200px ;
+    margin: 0 100px ;
 }
 #work .ai .ai01 > .worktitle{
     text-align: center;
@@ -235,9 +264,78 @@ header nav ul li > a:hover{
     font-size: 20px;
     margin: 40px 100px; 
 }
+#work .ai div div .time{
+    margin-top: 10px;
+}
+#work .ae > .ae01{
+    max-width: 1920px;
+    width: 70%;
+    height: 600px;
+    margin: 100px 220px;
+    border: solid 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
 #work .ae div > video{
+    margin-top: 40px;
     width: 500px;
+}
+#work .ae div > .worktitle{
+    font-size: 30px;
+}
+#work .ae div > .details{
+    margin: 10px 200px;
+}
+#work .unity > .unity01{
+    max-width: 1920px;
+    width: 70%;
+    height: 600px;
+    margin: 100px 220px;
+    border: solid 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
 }
 #work .unity div > video{
     width: 500px;
+}
+#work .unity div > .worktitle{
+    font-size: 30px;
 } 
+#work .unity div > .details{
+    margin: 10px 200px;
+}
+.back{
+    color: #707070;
+    position: fixed;
+    bottom: 24px;
+    right: 80px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    padding: 16px 20px;
+    text-align: right;
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+}
+.arrow1 {
+    width: 120px;
+    height: 1px;
+    background: #4d6176;
+    position: absolute;
+    top: 65%;
+    right: 18px;
+} 
+.arrow2 {
+    width: 1px;
+    height: 12px;
+    background: #4d6176;
+    position: absolute;
+    top: calc(65% + 1px);
+    right: 136px;
+    transform: rotate(-130deg);
+    transform-origin: top left;
+}
