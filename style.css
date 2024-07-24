@@ -3,20 +3,22 @@ html{
 }
 body{
     margin: 0 auto;
+    min-width: 375px;
+    max-width: 1920px;
+    width: 100%;
 }
 .fast {
     display: block; 
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 1000vh;
     background-color: #4d6176;
     color: white;
     font-size: 50px;
     z-index: 100;
     transition: opacity 1s ease; 
 }
-
 .fast.hidden {
     opacity: 0;
 }
@@ -26,16 +28,26 @@ body{
     line-height: 900px;
     z-index: 100;
 }
+@media screen and (width < 800px){
+    .fast{
+        font-size: 20px;
+    }
+}
 header{
     left: 0;
     top: 0;
     width: 100%;
-    min-height: 130px;
+    height: 130px;
     background-color: #4d6176;
     opacity: 0.9;
     z-index: 10;
     display: flex;
 }
+.menu-icon {
+  font-size: 24px;
+  display: none;
+}
+  
 header > h1{
     margin: 0 auto;
     flex: 1;
@@ -97,7 +109,6 @@ header nav ul li > a:hover{
     border: solid 3px;
     display: flex;
 }
-
 #self .self-area img{
     width: 400px;
     height: 300px;
@@ -114,9 +125,53 @@ header nav ul li > a:hover{
     margin-bottom: 30px;
     font-size: 50px;
 }
-#work .ai div > img{
-    width: 500px;
-    height: 800px;
+#work .ai .ai02 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 100px ;
+}
+#work .ai .ai03 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 100px ;
+}
+#work .ai .ai04 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 100px ;
+}
+@media screen and (width < 800px){
+    header > h1{
+        font-size: 30px;
+        line-height: 170px;
+    }
+    header > nav{
+        display: none;
+    }
+    .sub{
+        width: 100px;
+        font-size: 20px;
+    }
+    #self > .self-area{
+        display: block;
+        max-width: 600px;
+        height: 600px;
+        margin: 100px 50px;
+    }
+    #self .self-area > img{
+        width: 90%;
+        height: 200px;
+        margin: 25px;
+    }
+    #self .self-area .intor{
+        width: 90%;
+       margin: 25px;
+    }
+    #self .self-area .intor > .name{
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
 }
 #skill{
     height: 1000px;
@@ -141,11 +196,6 @@ header nav ul li > a:hover{
     display: block; 
     margin: 0 auto; 
 }
-#skill .area div > .aeimg{
-    width: 100px;
-    display: block; 
-    margin: 0 auto; 
-}
 #skill .area div > .unimg{
     width: 100px;
     display: block; 
@@ -153,11 +203,6 @@ header nav ul li > a:hover{
 }
 #skill .area div > .aeimg{
     width: 110px;
-    display: block; 
-    margin: 0 auto; 
-}
-#skill .area div > .unimg{
-    width: 100px;
     display: block; 
     margin: 0 auto; 
 }
@@ -169,10 +214,31 @@ header nav ul li > a:hover{
     margin: 50px 70px;
     font-size: 20px;
 }
+@media screen and (width < 800px){
+    #skill{
+        height: 2000px;
+    }
+    #skill > .area{
+        display: block;
+    }
+    #skill .area > div{
+        width: 270px;
+        height: 500px;
+        margin: 100px 50px;
+    }
+    #skill .area div > .skillname{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #skill .area div > .description{
+        margin: 50px 70px;
+        font-size: 15px;
+    }
+}
 #work div > .skillname{
     display: grid;
-    color: white;
-    background-color: #4d6176;
+    color: #4d6176;
+    background-color: #dfd892;
     width: 300px;
     height: 80px;
     text-align: center;
@@ -180,7 +246,8 @@ header nav ul li > a:hover{
     justify-content: center;
     font-size: 25px;
     margin-top: 100px;
-    border-radius: 5px;
+    margin-left: 50px;
+    border-radius: 10px;
 }
 #work .ai > .aiflex01{
     display: flex;
@@ -188,12 +255,14 @@ header nav ul li > a:hover{
 #work .ai > .aiflex02{
     display: flex;
 }
+
 #work .ai div > .ai01{
     width: 100%;
     height: 900px;
     margin: 100px 100px;
     border: solid 3px;
 }
+
 #work .ai div > .ai02{
     width: 100%;
     height: 900px;
@@ -216,21 +285,6 @@ header nav ul li > a:hover{
     width: 300px;
     height: 500px;
     margin: 0 100px;
-}
-#work .ai .ai02 > img{
-    width: 300px;
-    height: 500px;
-    margin: 0 100px ;
-}
-#work .ai .ai03 > img{
-    width: 300px;
-    height: 500px;
-    margin: 0 100px ;
-}
-#work .ai .ai04 > img{
-    width: 300px;
-    height: 500px;
-    margin: 0 100px ;
 }
 #work .ai .ai01 > .worktitle{
     text-align: center;
@@ -267,6 +321,85 @@ header nav ul li > a:hover{
 #work .ai div div .time{
     margin-top: 10px;
 }
+@media screen and (width < 800px){
+    #work {
+        height: 5000px;
+    }
+    #work .ai > .aiflex01{
+        display: block;
+    }
+    #work .ai > .aiflex02{
+        display: block;
+    }
+    #work .ai div > .ai01{
+        width: 80%;
+        height: 720px;
+        margin: 50px
+    }
+    #work .ai div > .ai02{
+        width: 80%;
+        height: 700px;
+        margin: 50px
+    }
+    #work .ai div > .ai03{
+        width: 80%;
+        height: 700px;
+        margin: 50px
+    }
+    #work .ai div > .ai04{
+        width: 80%;
+        height: 680px;
+        margin: 50px
+    }
+    #work .ai .ai01 > img{
+        width: 200px;
+        height: 400px;
+        margin: 0 50px;
+    }
+    #work .ai .ai02 > img{
+        width: 200px;
+        height: 400px;
+        margin: 0 50px;
+    }
+    #work .ai .ai03 > img{
+        width: 200px;
+        height: 400px;
+        margin: 0 50px;
+    }
+    #work .ai .ai04 > img{
+        width: 200px;
+        height: 400px;
+        margin: 0 50px;
+    }
+    #work .ai .ai01 > .worktitle{
+        font-size: 20px;
+    }
+    #work .ai .ai02 > .worktitle{
+        font-size: 20px;
+    }
+    #work .ai .ai03 > .worktitle{
+        font-size: 20px;
+    }
+    #work .ai .ai04 > .worktitle{
+        font-size: 20px;
+    }
+    #work .ai .ai01 > .details{
+        font-size: 15px;
+        margin: 40px 50px; 
+    }
+    #work .ai .ai02 > .details{
+        font-size: 15px;
+        margin: 40px 50px; 
+    }
+    #work .ai .ai03 > .details{
+        font-size: 15px;
+        margin: 40px 50px; 
+    }
+    #work .ai .ai04 > .details{
+        font-size: 15px;
+        margin: 40px 50px; 
+    }
+}
 #work .ae > .ae01{
     max-width: 1920px;
     width: 70%;
@@ -288,6 +421,25 @@ header nav ul li > a:hover{
 #work .ae div > .details{
     margin: 10px 200px;
 }
+@media screen and (width < 800px){
+    #work .ae > .ae01{
+        max-width: 600px;
+        width: 80%;
+        height: 600px;
+        margin: 100px 50px;
+    }
+    #work .ae div > video{
+        margin-top: 10px;
+        width: 250px;
+    }
+    #work .ae div > .worktitle{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    #work .ae div > .details{
+        margin: 10px 50px;
+    }
+}
 #work .unity > .unity01{
     max-width: 1920px;
     width: 70%;
@@ -308,8 +460,27 @@ header nav ul li > a:hover{
 #work .unity div > .details{
     margin: 10px 200px;
 }
+@media screen and (width < 800px){
+    #work .unity > .unity01{
+        max-width: 600px;
+        width: 80%;
+        height: 600px;
+        margin: 100px 50px;
+    }
+    #work .unity div > video{
+        margin-top: 10px;
+        width: 250px;
+    }
+    #work .unity div > .worktitle{
+        font-size: 20px;
+        margin-top: 20px;
+    } 
+    #work .unity div > .details{
+        margin: 10px 50px;
+    }
+}
 .back{
-    color: #707070;
+    color: #dfd892;
     position: fixed;
     bottom: 24px;
     right: 80px;
@@ -324,7 +495,7 @@ header nav ul li > a:hover{
 .arrow1 {
     width: 120px;
     height: 1px;
-    background: #4d6176;
+    background: #dfd892;
     position: absolute;
     top: 65%;
     right: 18px;
@@ -332,10 +503,28 @@ header nav ul li > a:hover{
 .arrow2 {
     width: 1px;
     height: 12px;
-    background: #4d6176;
+    background: #dfd892;
     position: absolute;
     top: calc(65% + 1px);
     right: 136px;
     transform: rotate(-130deg);
     transform-origin: top left;
+}
+footer{
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+}
+footer h1{
+    margin: 0 auto;
+    padding: 100px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: #4d6176;
+}
+@media screen and (width < 800px){
+    footer h1{
+        font-size: 20px;
+    }
 }
