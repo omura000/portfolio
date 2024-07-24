@@ -28,7 +28,7 @@ body{
     line-height: 900px;
     z-index: 100;
 }
-@media screen and (width < 800px){
+@media screen and (width < 1000px){
     .fast{
         font-size: 20px;
     }
@@ -140,7 +140,7 @@ header nav ul li > a:hover{
     height: 500px;
     margin: 0 100px ;
 }
-@media screen and (width < 800px){
+@media screen and (width < 1000px){
     header > h1{
         font-size: 30px;
         line-height: 170px;
@@ -214,7 +214,7 @@ header nav ul li > a:hover{
     margin: 50px 70px;
     font-size: 20px;
 }
-@media screen and (width < 800px){
+@media screen and (width < 1000px){
     #skill{
         height: 2000px;
     }
@@ -321,7 +321,7 @@ header nav ul li > a:hover{
 #work .ai div div .time{
     margin-top: 10px;
 }
-@media screen and (width < 800px){
+@media screen and (width < 1000px){
     #work {
         height: 5000px;
     }
@@ -421,7 +421,7 @@ header nav ul li > a:hover{
 #work .ae div > .details{
     margin: 10px 200px;
 }
-@media screen and (width < 800px){
+@media screen and (width < 1000px){
     #work .ae > .ae01{
         max-width: 600px;
         width: 80%;
@@ -460,7 +460,7 @@ header nav ul li > a:hover{
 #work .unity div > .details{
     margin: 10px 200px;
 }
-@media screen and (width < 800px){
+@media screen and (width < 1000px){
     #work .unity > .unity01{
         max-width: 600px;
         width: 80%;
@@ -523,7 +523,7 @@ footer h1{
     color: white;
     background-color: #4d6176;
 }
-@media screen and (width < 800px){
+@media screen and (width < 1000px){
     footer h1{
         font-size: 20px;
     }
