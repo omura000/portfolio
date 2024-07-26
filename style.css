@@ -5,7 +5,6 @@ body{
     margin: 0 auto;
     min-width: 375px;
     max-width: 1920px;
-    width: 100%;
 }
 .fast {
     display: block; 
@@ -28,26 +27,6 @@ body{
     line-height: 900px;
     z-index: 100;
 }
-@media screen and (width < 1000px){
-    .fast{
-        font-size: 20px;
-    }
-}
-header{
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 130px;
-    background-color: #4d6176;
-    opacity: 0.9;
-    z-index: 10;
-    display: flex;
-}
-.menu-icon {
-  font-size: 24px;
-  display: none;
-}
-  
 header > h1{
     margin: 0 auto;
     flex: 1;
@@ -80,6 +59,104 @@ header nav ul li > a:hover{
     padding: 10px;
     color: white;
 }
+@media screen and (width < 1000px){
+    .fast{
+        font-size: 20px;
+    }
+    header > h1{
+        text-align: end;
+        font-size: 30px;
+        line-height: 170px;
+    }
+    header > nav{
+        display: none;
+    }
+    .sub{
+        width: 100px;
+        font-size: 20px;
+    }
+}
+header{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #4d6176;
+    opacity: 0.9;
+    z-index: 10;
+    display: flex;
+}
+@media screen and (width > 1000px){
+    #hmb{
+        display: none;
+    }
+}
+@media screen and (width < 1000px){
+    #header.active{
+        background-color: #dfd892;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 8520px;
+        z-index: 1000;
+        opacity: 1;
+        justify-content: space-between;
+    }
+    #header.active >  h1{
+        display: none;
+    }
+    #hmb{
+        color: white;
+        width: 70px;
+        height: 80px;
+        cursor: pointer;
+        position: relative;
+        z-index: 110;
+        border-radius: 10px 0 0 10px;
+    }
+    #hmb span{
+        width: 50px;
+        height: 6px;
+        display: block;
+        background-color: white;
+        position: absolute;
+        left: 10px;
+        transition: .1s;
+    }
+    #hmb p{
+        margin-left: 10px;
+        line-height: 120px;
+    }
+    #hmb span:first-child{top:30px}
+    #hmb span:nth-child(2){top:45px}
+    #hmb span:nth-child(3){top:60px}
+    #hmb p:last-child{bottom:100px;}
+    .active #hmb span:first-child{
+        top: 40px;
+        transform: rotate(40deg)
+    }
+    .active #hmb span:nth-child(2){
+        opacity: 0;
+    }
+    .active #hmb span:nth-child(3){
+        top: 40px;
+        transform: rotate(-40deg)
+    }
+    .active #hmb p:last-child{
+        opacity: 0;
+    }
+    header.active nav{
+        display: block;
+    }
+    header.active nav > ul{
+        display: inline;
+    }
+    header.active nav ul > li{
+        font-size: 30px;
+        margin: 100px 0;
+    }
+}
 .aicon{
     margin: 15px;
     width: 100px;
@@ -102,7 +179,6 @@ header nav ul li > a:hover{
     margin-top: 150px;
 }
 #self .self-area{
-    max-width: 1920px;
     width: 70%;
     height: 500px;
     margin: 100px 220px;
@@ -141,22 +217,11 @@ header nav ul li > a:hover{
     margin: 0 100px ;
 }
 @media screen and (width < 1000px){
-    header > h1{
-        font-size: 30px;
-        line-height: 170px;
-    }
-    header > nav{
-        display: none;
-    }
-    .sub{
-        width: 100px;
-        font-size: 20px;
-    }
     #self > .self-area{
         display: block;
-        max-width: 600px;
+        width: 80%;
         height: 600px;
-        margin: 100px 50px;
+        margin: 100px 30px;
     }
     #self .self-area > img{
         width: 90%;
@@ -222,9 +287,9 @@ header nav ul li > a:hover{
         display: block;
     }
     #skill .area > div{
-        width: 270px;
+        width: 80%;
         height: 500px;
-        margin: 100px 50px;
+        margin: 100px 30px;
     }
     #skill .area div > .skillname{
         font-size: 30px;
@@ -325,6 +390,9 @@ header nav ul li > a:hover{
     #work {
         height: 5000px;
     }
+    #work div > .skillname{
+        margin-left: 30px;
+    }
     #work .ai > .aiflex01{
         display: block;
     }
@@ -334,22 +402,22 @@ header nav ul li > a:hover{
     #work .ai div > .ai01{
         width: 80%;
         height: 720px;
-        margin: 50px
+        margin: 30px
     }
     #work .ai div > .ai02{
         width: 80%;
         height: 700px;
-        margin: 50px
+        margin: 30px
     }
     #work .ai div > .ai03{
         width: 80%;
         height: 700px;
-        margin: 50px
+        margin: 30px
     }
     #work .ai div > .ai04{
         width: 80%;
         height: 680px;
-        margin: 50px
+        margin: 30px
     }
     #work .ai .ai01 > img{
         width: 200px;
@@ -426,7 +494,7 @@ header nav ul li > a:hover{
         max-width: 600px;
         width: 80%;
         height: 600px;
-        margin: 100px 50px;
+        margin: 100px 30px;
     }
     #work .ae div > video{
         margin-top: 10px;
@@ -465,7 +533,7 @@ header nav ul li > a:hover{
         max-width: 600px;
         width: 80%;
         height: 600px;
-        margin: 100px 50px;
+        margin: 100px 30px;
     }
     #work .unity div > video{
         margin-top: 10px;
@@ -524,6 +592,15 @@ footer h1{
     background-color: #4d6176;
 }
 @media screen and (width < 1000px){
+    .back{
+        right: 45px;
+    }
+    .arrow1 {
+        top: 70%;
+    } 
+    .arrow2 {
+        top: calc(70% + 1px);
+    }
     footer h1{
         font-size: 20px;
     }

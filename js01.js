@@ -13,17 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
             fast.style.display = "none";
         }, 1000); // 1秒後に完全に非表示
     }, 2000); // 2秒後にフェードアウト開始
-
-    const menuIcon = document.querySelector('#menu-icon');
-    const navbar = document.querySelector('#navbar');
-
-    menuIcon.addEventListener('click', () => {
-      if (navbar.style.display === 'block') {
-        navbar.style.display = 'none';
-        menuIcon.textContent = '☰'; // メニューが閉じているときはバツアイコンを表示
-      } else {
-        navbar.style.display = 'block';
-        menuIcon.textContent = '×'; // メニューが開いているときはハンバーガーアイコンを表示
-      }
+    
+    const hmbBtn = document.getElementById("hmb")
+    const header = document.getElementById("header")
+    const navLinks = document.querySelectorAll('#header nav ul li a');
+    hmbBtn.addEventListener("click",function(){
+        header.classList.toggle("active")
+    })
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            header.classList.remove('active');
+        });
     });
 });
