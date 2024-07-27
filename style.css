@@ -27,6 +27,19 @@ body{
     line-height: 900px;
     z-index: 100;
 }
+header{
+    left: 0;
+    top: 0;
+    min-width: 357px;
+    max-width: 1920px;
+    width: 100%;
+    height: 130px;
+    background-color: #4d6176;
+    opacity: 0.9;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+}
 header > h1{
     margin: 0 auto;
     flex: 1;
@@ -76,16 +89,6 @@ header nav ul li > a:hover{
         font-size: 20px;
     }
 }
-header{
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 130px;
-    background-color: #4d6176;
-    opacity: 0.9;
-    z-index: 10;
-    display: flex;
-}
 @media screen and (width > 1000px){
     #hmb{
         display: none;
@@ -106,12 +109,17 @@ header{
     #header.active >  h1{
         display: none;
     }
+    #header{
+        position: relative;
+    }
     #hmb{
         color: white;
         width: 70px;
         height: 80px;
         cursor: pointer;
-        position: relative;
+        position: absolute;
+        top: -10px;
+        right: 0;
         z-index: 110;
         border-radius: 10px 0 0 10px;
     }
@@ -154,7 +162,8 @@ header{
     }
     header.active nav ul > li{
         font-size: 30px;
-        margin: 100px 0;
+        margin: 150px 0;
+        margin-right: 200px;
     }
 }
 .aicon{
@@ -179,11 +188,14 @@ header{
     margin-top: 150px;
 }
 #self .self-area{
-    width: 70%;
+    width: 80%;
     height: 500px;
-    margin: 100px 220px;
+    margin: 0 auto;
+    margin-top: 100px;
     border: solid 3px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #self .self-area img{
     width: 400px;
@@ -201,36 +213,20 @@ header{
     margin-bottom: 30px;
     font-size: 50px;
 }
-#work .ai .ai02 > img{
-    width: 300px;
-    height: 500px;
-    margin: 0 100px ;
-}
-#work .ai .ai03 > img{
-    width: 300px;
-    height: 500px;
-    margin: 0 100px ;
-}
-#work .ai .ai04 > img{
-    width: 300px;
-    height: 500px;
-    margin: 0 100px ;
-}
 @media screen and (width < 1000px){
     #self > .self-area{
         display: block;
-        width: 80%;
         height: 600px;
         margin: 100px 30px;
     }
     #self .self-area > img{
         width: 90%;
         height: 200px;
-        margin: 25px;
+        margin: 20px;
     }
     #self .self-area .intor{
         width: 90%;
-       margin: 25px;
+       margin: 20px;
     }
     #self .self-area .intor > .name{
         margin: 0;
@@ -320,14 +316,44 @@ header{
 #work .ai > .aiflex02{
     display: flex;
 }
-
+#work .ai .ai01 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#work .ai .ai02 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#work .ai .ai03 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#work .ai .ai04 > img{
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #work .ai div > .ai01{
     width: 100%;
     height: 900px;
     margin: 100px 100px;
     border: solid 3px;
 }
-
 #work .ai div > .ai02{
     width: 100%;
     height: 900px;
@@ -345,11 +371,6 @@ header{
     height: 900px;
     margin: 100px 100px;
     border: solid 3px;
-}
-#work .ai .ai01 > img{
-    width: 300px;
-    height: 500px;
-    margin: 0 100px;
 }
 #work .ai .ai01 > .worktitle{
     text-align: center;
@@ -422,22 +443,18 @@ header{
     #work .ai .ai01 > img{
         width: 200px;
         height: 400px;
-        margin: 0 50px;
     }
     #work .ai .ai02 > img{
         width: 200px;
         height: 400px;
-        margin: 0 50px;
     }
     #work .ai .ai03 > img{
         width: 200px;
         height: 400px;
-        margin: 0 50px;
     }
     #work .ai .ai04 > img{
         width: 200px;
         height: 400px;
-        margin: 0 50px;
     }
     #work .ai .ai01 > .worktitle{
         font-size: 20px;
